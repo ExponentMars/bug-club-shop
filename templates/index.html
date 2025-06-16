@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}The Bug Club{% endblock %} {% block
+content %}
+
+<!-- Banner Image -->
+<div>
+  <img
+    src="{{ url_for('static', filename='img/shopbanner.png') }}"
+    class="banner"
+    alt="Banner"
+  />
+</div>
+
+<!--Featured Items Label-->
+<div class="text-center">
+  <h1 class="featured-items">Featured Items</h1>
+</div>
+
+<!-- 3-Column Photo Grid -->
+<div class="container my-5">
+  <div class="row photo-grid">
+    {% for product in products %}
+    <div class="col-md-4">
+      <a
+        href="{{ url_for('product', product_id=product.id) }}"
+        class="itemlink"
+      >
+        <img
+          src="{{ url_for('static', filename='img/' ~ product.images[0]) }}"
+          alt="{{ product.name }}"
+          class="img-fluid"
+        />
+        <h2 class="item-link-text">{{ product.name }}</h2>
+        <h3 class="item-link-text">${{ '%.2f'|format(product.price) }}</h3>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
