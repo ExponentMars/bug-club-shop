@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}{{ category_name }} | The Bug Club{%
+endblock %} {% block content %}
+<div class="container my-5">
+  <h1>{{ category_name }}</h1>
+  <div class="row photo-grid">
+    {% for product in products %}
+    <div class="col-md-4">
+      <a
+        href="{{ url_for('product', product_id=product.id) }}"
+        class="itemlink"
+      >
+        <img
+          src="{{ url_for('static', filename='img/' ~ product.images[0]) }}"
+          alt="{{ product.name }}"
+          class="img-fluid"
+        />
+        <h2 class="item-link-text">{{ product.name }}</h2>
+        <h3 class="item-link-text">${{ '%.2f'|format(product.price) }}</h3>
+      </a>
+    </div>
+    {% else %}
+    <p>No products found in this category.</p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

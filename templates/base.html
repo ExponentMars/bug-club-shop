@@ -32,6 +32,38 @@
             href="#"
             role="button"
             data-bs-toggle="dropdown"
+            >Live Invertebrates</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ url_for('category', category_name='beetles') }}"
+                >Beetles</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ url_for('category', category_name='ants') }}"
+                >Ants</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ url_for('category', category_name='other') }}"
+                >Other</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
             >Equipment</a
           >
           <ul class="dropdown-menu">
@@ -40,22 +72,6 @@
             <li><a class="dropdown-item" href="#">Brushes</a></li>
           </ul>
         </div>
-
-        <div class="dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            >Live Invertebrates</a
-          >
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cutters</a></li>
-            <li><a class="dropdown-item" href="#">Tweezers</a></li>
-            <li><a class="dropdown-item" href="#">Measuring Tools</a></li>
-          </ul>
-        </div>
-
         <div class="dropdown">
           <a
             class="nav-link dropdown-toggle"
