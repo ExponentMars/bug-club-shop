@@ -3,6 +3,19 @@ from flask import Flask, render_template, url_for, abort
 app = Flask(__name__)
 
 # 🐞 Static product data (you can update or add more products here)
+# Each product should follow this structure:
+'''
+    {
+        "id": ,
+        "name": "",
+        "price": ,
+        "desc": "",
+        "images": ["BDFB_Fivepack.jpg"],
+        "category": "",
+        "shopify_buy_button":""""""
+    }
+'''
+
 products = [
     {
         "id": 1,
@@ -47,4 +60,4 @@ def category(category_name):
 
 # 🐞 Run the app in development mode
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
