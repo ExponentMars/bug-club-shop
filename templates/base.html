@@ -67,9 +67,20 @@
             >Equipment</a
           >
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Formicariums</a></li>
-            <li><a class="dropdown-item" href="#">Collecting Tools</a></li>
-            <li><a class="dropdown-item" href="#">Other</a></li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ url_for('category', category_name='formicariums') }}"
+                >Formicariums</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ url_for('category', category_name='collecting-tools') }}"
+                >Collecting Tools</a
+              >
+            </li>
           </ul>
         </div>
         <div class="dropdown">
