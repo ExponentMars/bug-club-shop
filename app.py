@@ -57,7 +57,7 @@ products = [
     },
     {
         "id": 5,
-        "name": "Test Tube Feeding Insert -- 18mm OD Test Tubes",
+        "name": "20-pack Test Tube Feeding Insert -- 18mm OD Test Tubes 20",
         "price": 5.00,
         "desc": "Designed for use with 18mm OD test tubes, this feeding insert allows for easy access to your ants while minimizing disturbance. The convenient design makes it easy to load food.",
         "images": ["18mm ttinsert pic1.JPG", "18mm ttinsert pic2.JPG", "18mm ttinsert pic3.JPG"],
@@ -66,7 +66,7 @@ products = [
     },
     {
         "id": 6,
-        "name": "Test Tube Feeding Insert -- 20mm OD Test Tubes",
+        "name": "20-pack Test Tube Feeding Insert -- 20mm OD Test Tubes",
         "price": 5.00,
         "desc": "Designed for use with 20mm OD test tubes, this feeding insert allows for easy access to your ants while minimizing disturbance. The convenient design makes it easy to load food.",
         "images": ["20mm ttinsert pic1.JPG", "20mm ttinsert pic2.JPG", "20mm ttinsert pic3.JPG"],
