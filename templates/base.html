@@ -15,11 +15,13 @@
   </head>
   <body>
     <div class="container text-center py-3">
-      <img
-        src="{{ url_for('static', filename='img/bug club logo.jpg') }}"
-        alt="Logo"
-        class="logo-img"
-      />
+      <a href="{{ url_for('index') }}">
+        <img
+          src="{{ url_for('static', filename='img/bug club logo.jpg') }}"
+          alt="Logo"
+          class="logo-img"
+        />
+      </a>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -144,8 +146,8 @@
             <p>Email: penhibugclub@gmail.com</p>
             <p>
               Follow us:
-              <a href="#" class="text-dark me-2">Instagram</a>
-              <a href="#" class="text-dark">Discord</a>
+              <a href="https://www.instagram.com/penhibugclub/" class="text-dark me-2">Instagram</a>
+              <a href="#" class="text-dark">Youtube</a>
             </p>
           </div>
         </div>
